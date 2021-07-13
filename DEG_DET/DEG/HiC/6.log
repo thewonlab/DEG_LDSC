@@ -1,0 +1,65 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.0
+* (C) 2014-2015 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /proj/hyejunglab/program/ldsc/LDSC/list.txt \
+--ld-wind-cm 1.0 \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/deg//6 \
+--bfile /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6 \
+--annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/deg//6.annot.gz \
+--l2  
+
+Beginning analysis at Sat Jul 27 10:12:40 2019
+Read list of 664016 SNPs from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6.bim
+Read 2 annotations for 664016 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/deg//6.annot.gz
+Read list of 489 individuals from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6.fam
+Reading genotypes from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6.bed
+Estimating LD Score.
+Reading list of 1190321 SNPs for which to print LD Scores from /proj/hyejunglab/program/ldsc/LDSC/list.txt
+After merging with --print-snps, LD Scores for 75358 SNPs will be printed.
+Writing LD Scores for 75358 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/deg//6.l2.ldscore.gz
+
+Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/deg//6.l2.ldscore.gz
+         MAF  SCZ_DEG_upL2  SCZ_DEG_downL2
+mean  0.2357        3.2285          2.7072
+std   0.1431        8.1341          7.1433
+min   0.0051       -0.5908         -0.5737
+25%   0.1104        0.0000          0.0000
+50%   0.2249        0.0723          0.0854
+75%   0.3579        2.0562          1.6053
+max   0.5000       88.3354        104.9977
+
+MAF/LD Score Correlation Matrix
+                   MAF  SCZ_DEG_upL2  SCZ_DEG_downL2
+MAF             1.0000        0.0593          0.0684
+SCZ_DEG_upL2    0.0593        1.0000          0.1034
+SCZ_DEG_downL2  0.0684        0.1034          1.0000
+
+LD Score Matrix Condition Number
+1.3007
+
+Annotation Correlation Matrix
+              SCZ_DEG_up  SCZ_DEG_down
+SCZ_DEG_up        1.0000       -0.0218
+SCZ_DEG_down     -0.0218        1.0000
+
+Annotation Matrix Column Sums
+SCZ_DEG_up      15512
+SCZ_DEG_down    13639
+
+Summary of Annotation Matrix Row Sums
+count    664016.0000
+mean          0.0439
+std           0.2049
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           2.0000
+Analysis finished at Sat Jul 27 10:21:44 2019
+Total time elapsed: 9.0m:4.08s
