@@ -9,51 +9,51 @@ Call:
 ./ldsc.py \
 --print-snps /proj/hyejunglab/program/ldsc/LDSC/list.txt \
 --ld-wind-cm 1.0 \
---out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/9 \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/9 \
 --bfile /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.9 \
---annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/9.annot.gz \
+--annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/9.annot.gz \
 --l2  
 
-Beginning analysis at Thu Apr 29 16:00:48 2021
+Beginning analysis at Fri Apr 30 01:38:36 2021
 Read list of 438106 SNPs from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.9.bim
-Read 1 annotations for 438106 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/9.annot.gz
+Read 1 annotations for 438106 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/9.annot.gz
 Read list of 489 individuals from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.9.fam
 Reading genotypes from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.9.bed
 Estimating LD Score.
 Reading list of 1190321 SNPs for which to print LD Scores from /proj/hyejunglab/program/ldsc/LDSC/list.txt
 After merging with --print-snps, LD Scores for 55464 SNPs will be printed.
-Writing LD Scores for 55464 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/9.l2.ldscore.gz
+Writing LD Scores for 55464 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/9.l2.ldscore.gz
 
-Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/9.l2.ldscore.gz
-         MAF        L2
-mean  0.2359    6.8598
-std   0.1423   13.4025
-min   0.0051   -0.5004
-25%   0.1115    0.0723
-50%   0.2249    1.2157
-75%   0.3569    7.3319
-max   0.5000  139.1678
+Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/9.l2.ldscore.gz
+         MAF       L2
+mean  0.2359   4.0012
+std   0.1423   9.2044
+min   0.0051  -0.5227
+25%   0.1115   0.0000
+50%   0.2249   0.2514
+75%   0.3569   3.1019
+max   0.5000  80.8427
 
 MAF/LD Score Correlation Matrix
         MAF      L2
-MAF  1.0000  0.0487
-L2   0.0487  1.0000
+MAF  1.0000  0.0647
+L2   0.0647  1.0000
 
 Annotation Correlation Matrix
-      kME2
-kME2   1.0
+         ktotal2
+ktotal2      1.0
 
 Annotation Matrix Column Sums
-kME2    28012
+ktotal2    15758
 
 Summary of Annotation Matrix Row Sums
 count    438106.0000
-mean          0.0639
-std           0.2446
+mean          0.0360
+std           0.1862
 min           0.0000
 25%           0.0000
 50%           0.0000
 75%           0.0000
 max           1.0000
-Analysis finished at Thu Apr 29 16:05:15 2021
-Total time elapsed: 4.0m:26.13s
+Analysis finished at Fri Apr 30 01:42:13 2021
+Total time elapsed: 3.0m:37.07s
