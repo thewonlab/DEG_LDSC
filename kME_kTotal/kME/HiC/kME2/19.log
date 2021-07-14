@@ -9,51 +9,51 @@ Call:
 ./ldsc.py \
 --print-snps /proj/hyejunglab/program/ldsc/LDSC/list.txt \
 --ld-wind-cm 1.0 \
---out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/19 \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/19 \
 --bfile /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.19 \
---annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/19.annot.gz \
+--annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/19.annot.gz \
 --l2  
 
-Beginning analysis at Fri Apr 30 01:38:36 2021
+Beginning analysis at Thu Apr 29 16:00:59 2021
 Read list of 232363 SNPs from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.19.bim
-Read 1 annotations for 232363 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/19.annot.gz
+Read 1 annotations for 232363 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/19.annot.gz
 Read list of 489 individuals from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.19.fam
 Reading genotypes from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.19.bed
 Estimating LD Score.
 Reading list of 1190321 SNPs for which to print LD Scores from /proj/hyejunglab/program/ldsc/LDSC/list.txt
 After merging with --print-snps, LD Scores for 22509 SNPs will be printed.
-Writing LD Scores for 22509 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/19.l2.ldscore.gz
+Writing LD Scores for 22509 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/19.l2.ldscore.gz
 
-Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kTotal_hiC/ktotal2/19.l2.ldscore.gz
+Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME2/19.l2.ldscore.gz
          MAF        L2
-mean  0.2384    6.2641
-std   0.1420   13.7206
-min   0.0051   -0.5794
-25%   0.1145    0.0582
-50%   0.2342    0.7536
-75%   0.3569    6.0736
-max   0.5000  140.7463
+mean  0.2384   10.2961
+std   0.1420   15.8197
+min   0.0051   -0.4757
+25%   0.1145    0.8365
+50%   0.2342    4.0292
+75%   0.3569   12.4837
+max   0.5000  125.3268
 
 MAF/LD Score Correlation Matrix
         MAF      L2
-MAF  1.0000  0.0725
-L2   0.0725  1.0000
+MAF  1.0000  0.0614
+L2   0.0614  1.0000
 
 Annotation Correlation Matrix
-         ktotal2
-ktotal2      1.0
+      kME2
+kME2   1.0
 
 Annotation Matrix Column Sums
-ktotal2    10187
+kME2    20825
 
 Summary of Annotation Matrix Row Sums
 count    232363.0000
-mean          0.0438
-std           0.2047
+mean          0.0896
+std           0.2856
 min           0.0000
 25%           0.0000
 50%           0.0000
 75%           0.0000
 max           1.0000
-Analysis finished at Fri Apr 30 01:40:59 2021
-Total time elapsed: 2.0m:23.14s
+Analysis finished at Thu Apr 29 16:03:30 2021
+Total time elapsed: 2.0m:31.19s
