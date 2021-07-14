@@ -1,0 +1,59 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.0
+* (C) 2014-2015 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /proj/hyejunglab/program/ldsc/LDSC/list.txt \
+--ld-wind-cm 1.0 \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME3/16 \
+--bfile /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16 \
+--annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME3/16.annot.gz \
+--l2  
+
+Beginning analysis at Thu Apr 29 16:02:23 2021
+Read list of 316981 SNPs from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16.bim
+Read 1 annotations for 316981 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME3/16.annot.gz
+Read list of 489 individuals from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16.fam
+Reading genotypes from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16.bed
+Estimating LD Score.
+Reading list of 1190321 SNPs for which to print LD Scores from /proj/hyejunglab/program/ldsc/LDSC/list.txt
+After merging with --print-snps, LD Scores for 36526 SNPs will be printed.
+Writing LD Scores for 36526 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME3/16.l2.ldscore.gz
+
+Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME3/16.l2.ldscore.gz
+         MAF        L2
+mean  0.2389   11.7566
+std   0.1426   23.0065
+min   0.0051   -0.9664
+25%   0.1145    0.1924
+50%   0.2311    2.3230
+75%   0.3599   12.8631
+max   0.5000  305.3463
+
+MAF/LD Score Correlation Matrix
+       MAF     L2
+MAF  1.000  0.016
+L2   0.016  1.000
+
+Annotation Correlation Matrix
+      kME3
+kME3   1.0
+
+Annotation Matrix Column Sums
+kME3    31459
+
+Summary of Annotation Matrix Row Sums
+count    316981.0000
+mean          0.0992
+std           0.2990
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Thu Apr 29 16:05:27 2021
+Total time elapsed: 3.0m:3.93s
