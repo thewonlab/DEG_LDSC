@@ -1,0 +1,37 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.0
+* (C) 2014-2015 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2 /proj/hyejunglab/crossdisorder/LDSC/sumstat/scz3.sumstats.gz \
+--ref-ld-chr /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME5/,/proj/hyejunglab/program/ldsc/LDSC/baselineLD_v1.1/baselineLD. \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME5/ \
+--overlap-annot  \
+--frqfile-chr /proj/hyejunglab/program/ldsc/LDSC/1000G_Phase3_frq/1000G.EUR.QC. \
+--w-ld-chr /proj/hyejunglab/program/ldsc/LDSC/weights_hm3_no_hla/weights. 
+
+Beginning analysis at Thu Apr 29 23:29:20 2021
+Reading summary statistics from /proj/hyejunglab/crossdisorder/LDSC/sumstat/scz3.sumstats.gz ...
+Read summary statistics for 1156183 SNPs.
+Reading reference panel LD Score from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME5/,/proj/hyejunglab/program/ldsc/LDSC/baselineLD_v1.1/baselineLD.[1-22] ...
+Read reference panel LD Scores for 1190321 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /proj/hyejunglab/program/ldsc/LDSC/weights_hm3_no_hla/weights.[1-22] ...
+Read regression weight LD Scores for 1242190 SNPs.
+After merging with reference panel LD, 1147331 SNPs remain.
+After merging with regression SNP LD, 1041591 SNPs remain.
+Removed 0 SNPs with chi^2 > 105.318 (1041591 SNPs remain)
+Total Observed scale h2: 0.4277 (0.0178)
+Categories: L2_0 baseL2_1 Coding_UCSCL2_1 Coding_UCSC.extend.500L2_1 Conserved_LindbladTohL2_1 Conserved_LindbladToh.extend.500L2_1 CTCF_HoffmanL2_1 CTCF_Hoffman.extend.500L2_1 DGF_ENCODEL2_1 DGF_ENCODE.extend.500L2_1 DHS_peaks_TrynkaL2_1 DHS_TrynkaL2_1 DHS_Trynka.extend.500L2_1 Enhancer_AnderssonL2_1 Enhancer_Andersson.extend.500L2_1 Enhancer_HoffmanL2_1 Enhancer_Hoffman.extend.500L2_1 FetalDHS_TrynkaL2_1 FetalDHS_Trynka.extend.500L2_1 H3K27ac_HniszL2_1 H3K27ac_Hnisz.extend.500L2_1 H3K27ac_PGC2L2_1 H3K27ac_PGC2.extend.500L2_1 H3K4me1_peaks_TrynkaL2_1 H3K4me1_TrynkaL2_1 H3K4me1_Trynka.extend.500L2_1 H3K4me3_peaks_TrynkaL2_1 H3K4me3_TrynkaL2_1 H3K4me3_Trynka.extend.500L2_1 H3K9ac_peaks_TrynkaL2_1 H3K9ac_TrynkaL2_1 H3K9ac_Trynka.extend.500L2_1 Intron_UCSCL2_1 Intron_UCSC.extend.500L2_1 PromoterFlanking_HoffmanL2_1 PromoterFlanking_Hoffman.extend.500L2_1 Promoter_UCSCL2_1 Promoter_UCSC.extend.500L2_1 Repressed_HoffmanL2_1 Repressed_Hoffman.extend.500L2_1 SuperEnhancer_HniszL2_1 SuperEnhancer_Hnisz.extend.500L2_1 TFBS_ENCODEL2_1 TFBS_ENCODE.extend.500L2_1 Transcr_HoffmanL2_1 Transcr_Hoffman.extend.500L2_1 TSS_HoffmanL2_1 TSS_Hoffman.extend.500L2_1 UTR_3_UCSCL2_1 UTR_3_UCSC.extend.500L2_1 UTR_5_UCSCL2_1 UTR_5_UCSC.extend.500L2_1 WeakEnhancer_HoffmanL2_1 WeakEnhancer_Hoffman.extend.500L2_1 Super_Enhancer_VahediL2_1 Super_Enhancer_Vahedi.extend.500L2_1 Typical_Enhancer_VahediL2_1 Typical_Enhancer_Vahedi.extend.500L2_1 GERP.NSL2_1 GERP.RSsup4L2_1 MAFbin1L2_1 MAFbin2L2_1 MAFbin3L2_1 MAFbin4L2_1 MAFbin5L2_1 MAFbin6L2_1 MAFbin7L2_1 MAFbin8L2_1 MAFbin9L2_1 MAFbin10L2_1 MAF_Adj_Predicted_Allele_AgeL2_1 MAF_Adj_LLD_AFRL2_1 Recomb_Rate_10kbL2_1 Nucleotide_Diversity_10kbL2_1 Backgrd_Selection_StatL2_1 CpG_Content_50kbL2_1
+Lambda GC: 1.6831
+Mean Chi^2: 1.9365
+Intercept: 1.0844 (0.0155)
+Ratio: 0.0901 (0.0166)
+Reading annot matrix from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME5/,/proj/hyejunglab/program/ldsc/LDSC/baselineLD_v1.1/baselineLD.[1-22] ...
+Results printed to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/kME_hiC/kME5/.results
+Analysis finished at Thu Apr 29 23:33:12 2021
+Total time elapsed: 3.0m:52.12s
