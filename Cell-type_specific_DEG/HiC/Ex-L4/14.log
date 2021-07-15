@@ -1,0 +1,59 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.0
+* (C) 2014-2015 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /proj/hyejunglab/program/ldsc/LDSC/list.txt \
+--ld-wind-cm 1.0 \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L4/14 \
+--bfile /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.14 \
+--annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L4/14.annot.gz \
+--l2  
+
+Beginning analysis at Fri Apr 23 21:29:01 2021
+Read list of 324698 SNPs from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.14.bim
+Read 1 annotations for 324698 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L4/14.annot.gz
+Read list of 489 individuals from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.14.fam
+Reading genotypes from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.14.bed
+Estimating LD Score.
+Reading list of 1190321 SNPs for which to print LD Scores from /proj/hyejunglab/program/ldsc/LDSC/list.txt
+After merging with --print-snps, LD Scores for 39484 SNPs will be printed.
+Writing LD Scores for 39484 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L4/14.l2.ldscore.gz
+
+Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L4/14.l2.ldscore.gz
+         MAF        L2
+mean  0.2321    1.2418
+std   0.1424    5.1279
+min   0.0051   -0.6279
+25%   0.1074    0.0000
+50%   0.2198    0.0000
+75%   0.3507    0.0060
+max   0.5000  126.9862
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0309
+L2   0.0309  1.0000
+
+Annotation Correlation Matrix
+       Ex-L4
+Ex-L4    1.0
+
+Annotation Matrix Column Sums
+Ex-L4    3699
+
+Summary of Annotation Matrix Row Sums
+count    324698.0000
+mean          0.0114
+std           0.1061
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Fri Apr 23 21:30:52 2021
+Total time elapsed: 1.0m:51.27s
