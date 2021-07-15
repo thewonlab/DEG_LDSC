@@ -1,0 +1,59 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.0
+* (C) 2014-2015 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /proj/hyejunglab/program/ldsc/LDSC/list.txt \
+--ld-wind-cm 1.0 \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L5-6CCA/6 \
+--bfile /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6 \
+--annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L5-6CCA/6.annot.gz \
+--l2  
+
+Beginning analysis at Sat Apr 24 23:33:06 2021
+Read list of 664016 SNPs from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6.bim
+Read 1 annotations for 664016 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L5-6CCA/6.annot.gz
+Read list of 489 individuals from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6.fam
+Reading genotypes from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.6.bed
+Estimating LD Score.
+Reading list of 1190321 SNPs for which to print LD Scores from /proj/hyejunglab/program/ldsc/LDSC/list.txt
+After merging with --print-snps, LD Scores for 75358 SNPs will be printed.
+Writing LD Scores for 75358 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L5-6CCA/6.l2.ldscore.gz
+
+Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/EX-L5-6CCA/6.l2.ldscore.gz
+         MAF       L2
+mean  0.2357   1.5282
+std   0.1431   5.7951
+min   0.0051  -0.4753
+25%   0.1104   0.0000
+50%   0.2249   0.0000
+75%   0.3579   0.1890
+max   0.5000  92.2617
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0335
+L2   0.0335  1.0000
+
+Annotation Correlation Matrix
+            Ex-L5-6cca
+Ex-L5-6cca         1.0
+
+Annotation Matrix Column Sums
+Ex-L5-6cca    7606
+
+Summary of Annotation Matrix Row Sums
+count    664016.0000
+mean          0.0115
+std           0.1064
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Sat Apr 24 23:39:58 2021
+Total time elapsed: 6.0m:51.52s
