@@ -1,0 +1,59 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.0
+* (C) 2014-2015 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /proj/hyejunglab/program/ldsc/LDSC/list.txt \
+--ld-wind-cm 1.0 \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/OLI/12 \
+--bfile /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.12 \
+--annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/OLI/12.annot.gz \
+--l2  
+
+Beginning analysis at Fri Apr 23 23:42:01 2021
+Read list of 480110 SNPs from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.12.bim
+Read 1 annotations for 480110 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/OLI/12.annot.gz
+Read list of 489 individuals from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.12.fam
+Reading genotypes from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.12.bed
+Estimating LD Score.
+Reading list of 1190321 SNPs for which to print LD Scores from /proj/hyejunglab/program/ldsc/LDSC/list.txt
+After merging with --print-snps, LD Scores for 58543 SNPs will be printed.
+Writing LD Scores for 58543 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/OLI/12.l2.ldscore.gz
+
+Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/OLI/12.l2.ldscore.gz
+         MAF       L2
+mean  0.2334   0.1713
+std   0.1429   1.5500
+min   0.0051  -0.1157
+25%   0.1084   0.0000
+50%   0.2209   0.0000
+75%   0.3558   0.0000
+max   0.5000  34.9356
+
+MAF/LD Score Correlation Matrix
+       MAF     L2
+MAF  1.000  0.012
+L2   0.012  1.000
+
+Annotation Correlation Matrix
+     Oli
+Oli  1.0
+
+Annotation Matrix Column Sums
+Oli    703
+
+Summary of Annotation Matrix Row Sums
+count    480110.0000
+mean          0.0015
+std           0.0382
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Fri Apr 23 23:44:25 2021
+Total time elapsed: 2.0m:24.24s
