@@ -1,0 +1,59 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.0
+* (C) 2014-2015 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /proj/hyejunglab/program/ldsc/LDSC/list.txt \
+--ld-wind-cm 1.0 \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/scRNA_eQTL/In-SST/16 \
+--bfile /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16 \
+--annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/scRNA_eQTL/In-SST/16.annot.gz \
+--l2  
+
+Beginning analysis at Tue Apr 27 19:20:32 2021
+Read list of 316981 SNPs from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16.bim
+Read 1 annotations for 316981 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/scRNA_eQTL/In-SST/16.annot.gz
+Read list of 489 individuals from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16.fam
+Reading genotypes from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.16.bed
+Estimating LD Score.
+Reading list of 1190321 SNPs for which to print LD Scores from /proj/hyejunglab/program/ldsc/LDSC/list.txt
+After merging with --print-snps, LD Scores for 36526 SNPs will be printed.
+Writing LD Scores for 36526 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/scRNA_eQTL/In-SST/16.l2.ldscore.gz
+
+Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/scRNA_eQTL/In-SST/16.l2.ldscore.gz
+         MAF        L2
+mean  0.2389    6.9660
+std   0.1426   30.3567
+min   0.0051   -1.1709
+25%   0.1145    0.0000
+50%   0.2311    0.0389
+75%   0.3599    1.0496
+max   0.5000  398.5487
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000 -0.0511
+L2  -0.0511  1.0000
+
+Annotation Correlation Matrix
+        In-SST
+In-SST     1.0
+
+Annotation Matrix Column Sums
+In-SST    8848
+
+Summary of Annotation Matrix Row Sums
+count    316981.0000
+mean          0.0279
+std           0.1647
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Tue Apr 27 19:22:47 2021
+Total time elapsed: 2.0m:15.71s
