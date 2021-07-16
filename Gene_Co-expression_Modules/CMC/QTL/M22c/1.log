@@ -1,0 +1,59 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.0
+* (C) 2014-2015 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--print-snps /proj/hyejunglab/program/ldsc/LDSC/list.txt \
+--ld-wind-cm 1.0 \
+--out /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/CMC_coexp_QTL/M22c//1 \
+--bfile /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.1 \
+--annot /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/CMC_coexp_QTL/M22c//1.annot.gz \
+--l2  
+
+Beginning analysis at Sun May  2 04:16:48 2021
+Read list of 779354 SNPs from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.1.bim
+Read 1 annotations for 779354 SNPs from /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/CMC_coexp_QTL/M22c//1.annot.gz
+Read list of 489 individuals from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.1.fam
+Reading genotypes from /proj/hyejunglab/program/ldsc/LDSC/1000G_EUR_Phase3_plink/1000G.EUR.QC.1.bed
+Estimating LD Score.
+Reading list of 1190321 SNPs for which to print LD Scores from /proj/hyejunglab/program/ldsc/LDSC/list.txt
+After merging with --print-snps, LD Scores for 98642 SNPs will be printed.
+Writing LD Scores for 98642 SNPs to /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/CMC_coexp_QTL/M22c//1.l2.ldscore.gz
+
+Summary of LD Scores in /proj/hyejunglab/crossdisorder/LDSC/partherit/SCZ_expression/CMC_coexp_QTL/M22c//1.l2.ldscore.gz
+         MAF       L2
+mean  0.2346   0.0842
+std   0.1432   1.7207
+min   0.0051  -0.2749
+25%   0.1084   0.0000
+50%   0.2239   0.0000
+75%   0.3558   0.0000
+max   0.5000  77.9260
+
+MAF/LD Score Correlation Matrix
+        MAF      L2
+MAF  1.0000  0.0258
+L2   0.0258  1.0000
+
+Annotation Correlation Matrix
+     deg
+deg  1.0
+
+Annotation Matrix Column Sums
+deg    358
+
+Summary of Annotation Matrix Row Sums
+count    779354.0000
+mean          0.0005
+std           0.0214
+min           0.0000
+25%           0.0000
+50%           0.0000
+75%           0.0000
+max           1.0000
+Analysis finished at Sun May  2 04:21:11 2021
+Total time elapsed: 4.0m:23.29s
