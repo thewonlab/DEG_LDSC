@@ -1,10 +1,16 @@
 # DEG_LDSC
 
 Authors: Alice Yu and Hyejung Won 
+
 Created: 7/11/2021 
+
 Updated: 7/20/2021
 
-Each folder contains Stratified LD Score Regression (S-LDSC) annotation file for each transcriptomic feature
+Each folder contains Stratified LD Score Regression (S-LDSC) annotation file for each transcriptomic feature. 
+
+Each folder contains two subdirectories: 
+  - Hi-C: annotation file generated based on Hi-C evidence 
+  - QTL: annotation file generated based on QTL evidence 
 
 ## Cell-type specific DEG
   - Reference: Ruzicka, W.B. et al.(2020) medRxiv doi: https://doi.org/10.1101/2020.11.06.20225342
